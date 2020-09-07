@@ -1,0 +1,231 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+html {
+    background: url('../assets/bg.jpg') no-repeat center fixed;     
+    background-size: cover;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+  }
+/* 
+    to keep overflow sticky question mark? 
+    ref: https://stackoverflow.com/questions/47095596/body-overflow-x-hidden-breaks-position-sticky 
+*/
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.landing-page {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.landing-text {
+    position: relative;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 12%;
+}
+
+.text {
+    position: relative;
+    color: white;
+    display: block;
+    font-family: Noto Sans Tamil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7em;
+}
+
+.link-container {
+    margin-top: 15%;
+    margin-right: 15%;
+}
+
+.button {
+    height: 112px;
+    width: 256px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    margin: 16px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color:  rgb(156, 141, 141, 0.5);
+}
+
+span {
+    position: relative;
+    color: white;
+    margin: auto auto;
+    font-size: 2em;
+}
+
+.quickinfo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    width: 90%;
+    height: 128px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    font-size: 1.5em;
+}
+
+.welcome-msg {
+    position: relative;
+    font-size: 32px;
+    margin: 0;
+}
+
+.info {
+    cursor: pointer;
+}
+
+.github-val {
+    position: relative;
+    top: -14px;
+}
+
+.email-val {
+    position: relative;
+    top: -32px;
+}
+
+footer {
+    height: 192px;
+    width: 100%;
+    display: flex;
+    border-top: solid;
+    padding: 8px;
+}
+
+.footer-text {
+    font-size: 24px;
+    margin: 8px;
+}
+@media all and (min-width: 2200px) {
+    .text {
+        font-size: 12em;
+    }
+}
+
+@media all and (max-width: 1460px) {
+    .quickinfo-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        font-size: 0.7em;
+    }
+}
+
+
+@media all and (max-width: 1200px) {
+    .text {
+        font-size: 4em;
+    }
+
+    .landing-text {
+        position: relative;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .link-container {
+        margin-top: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .text {
+        font-size: 3.5em;
+    }
+    .landing-page {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .landing-text {
+        position: relative;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .link-container {
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .text {
+        font-size: 3.5em;
+    }
+    .landing-page {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .landing-text {
+        position: relative;
+        margin: 0;
+    }
+    
+    .link-container {
+        margin: 0;
+    }
+
+    .quickinfo-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: 64px auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        font-size: 0.5em;
+    }
+}
